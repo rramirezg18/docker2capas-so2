@@ -16,7 +16,7 @@ collection = db["formdata"]
 def submit():
     data = request.json
     collection.insert_one(data)
-    return jsonify({"message": "Data saved to MongoDB!"}), 201
+    return jsonify({"message": "Datos guardados en MongoDB!"}), 201
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
