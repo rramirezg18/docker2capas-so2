@@ -1,3 +1,5 @@
-*{
-    background-color: blueviolet;
+body {
+    background-color: rgb(111, 106, 116);
+    text-align: center;
+    margin: 0;
 }

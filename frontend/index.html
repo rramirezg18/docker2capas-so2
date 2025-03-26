@@ -10,8 +10,12 @@
     <form id="form">
         <label for="nombre">nombre</label>
         <input type="text" name="name" placeholder="Nombre" required><br>
-        <input type="email" name="email" placeholder="Correo" required><br>
-        <input type="telefono" name="telefono" placeholder="telefono" required><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Correo" required><br>
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" placeholder="telefono" required><br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" placeholder="edad" required><br>
         <button type="submit">Enviar</button>
     </form>
 
@@ -21,7 +25,8 @@
             const formData = {
                 name: this.name.value,
                 email: this.email.value,
-                telefono: this.telefono.value
+                telefono: this.telefono.value,
+                edad: this.edad.value
             };
             await fetch('http://localhost:5000/submit', {
 
