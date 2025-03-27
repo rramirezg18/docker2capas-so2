@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Formulario</title>
 </head>
-<body>
-    <h1>Ingresa Tus Datos</h1>
-    <form id="form">
-        <label for="nombre">nombre</label>
-        <input type="text" name="name" placeholder="Nombre" required><br>
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="Correo" required><br>
-        <label for="telefono">Telefono</label>
-        <input type="text" name="telefono" placeholder="telefono" required><br>
-        <label for="edad">Edad</label>
-        <input type="number" name="edad" placeholder="edad" required><br>
-        <button type="submit">Enviar</button>
-    </form>
 
+<body>
+    <header>
+        <h1>Ingresa Tus Datos</h1>
+    </header>
+    <nav>
+        <form id="form">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="name" placeholder="Nombre" required><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Correo" required><br>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" placeholder="telefono" required><br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" placeholder="edad" required><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </nav>
+    <footer>
+        <h2>Desarrollado por</h2>
+        <ul>
+            <li>Jean Klaus Castañeda Santos   7690-22-892</li>
+            <li>Jonathan Joel Chan Cuellar    7690-22-1805</li>
+            <li>Roberto Antonio Ramírez Gómez 7690-22-12700</li>
+        </ul>
+    </footer>
     <script>
-        document.getElementById('form').addEventListener('submit', async function(e) {
+        document.getElementById('form').addEventListener('submit', async function (e) {
             e.preventDefault();
             const formData = {
                 name: this.name.value,
@@ -39,4 +52,5 @@
         });
     </script>
 </body>
+
 </html>
